@@ -39,6 +39,7 @@ Por este motivo el “Asistente virtual en sucursal” te debe ayudar **antes, d
 * [1. Usuario Final](#1-usuario-final)
 * [2. Problemática](#2-problematica)
 * [3. Prototipo de baja fidelidad](#3-prototipo-de-baja-fidelidad)
+* [4. Manual de usuario](#4-manual-de-usuario)
 
 
 
@@ -58,3 +59,6 @@ Ella desearía poder agendar una cita en el horario que más le convenga, para o
 <img align='center' src="https://firebasestorage.googleapis.com/v0/b/personal-13210.appspot.com/o/prototipoB1.png?alt=media&token=fb5e27df-c390-4cff-a78d-ef962d72b181"/> 
 <img align='center' src="https://firebasestorage.googleapis.com/v0/b/personal-13210.appspot.com/o/prototipoB2.png?alt=media&token=27dac638-8c61-4dad-9944-16fe1783080f"/> 
 <img align='center' src="https://firebasestorage.googleapis.com/v0/b/personal-13210.appspot.com/o/prototipoB3.png?alt=media&token=e0a32570-b080-489f-bd2e-673c2fa9758e"/> 
+
+## 4. Manual de usuario:
+<img align='center' src="https://firebasestorage.googleapis.com/v0/b/personal-13210.appspot.com/o/manual.png?alt=media&token=6f049fb3-653b-4b57-89d1-83b4e2407b34"/>
