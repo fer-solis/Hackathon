@@ -55,3 +55,6 @@ Por su horario de trabajo le queda mejor asistir a la sucursal que esta a unas c
 Ella desearía poder agendar una cita en el horario que más le convenga, para organizarse con sus actividades.
 
 ## 3. Prototipo de baja fidelidad:
+<img align='center' src="https://firebasestorage.googleapis.com/v0/b/personal-13210.appspot.com/o/prototipoB1.png?alt=media&token=fb5e27df-c390-4cff-a78d-ef962d72b181"/> 
+<img align='center' src="https://firebasestorage.googleapis.com/v0/b/personal-13210.appspot.com/o/prototipoB2.png?alt=media&token=27dac638-8c61-4dad-9944-16fe1783080f"/> 
+<img align='center' src="https://firebasestorage.googleapis.com/v0/b/personal-13210.appspot.com/o/prototipoB3.png?alt=media&token=e0a32570-b080-489f-bd2e-673c2fa9758e"/> 
