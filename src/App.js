@@ -1,12 +1,15 @@
-import React from "react";
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route
-} from "react-router-dom";
+} from 'react-router-dom';
+
+import Block from './Block.jsx';
+import Register from './Register.jsx';
 
 import './App.css';
-import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
+//import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
 
 
 function App() {
@@ -15,11 +18,14 @@ function App() {
       <div className="App">
       <Switch>
           <Route path="/" exact>
-            <p>Inicio</p>
-            <AccessAlarmIcon/>
+            <Block/>
           </Route>
-          <Route path="/saludo">
-            <p>Hola</p>
+          <Route path="/register">
+            <p>Me voy a registrar</p>
+            <Register/>
+          </Route>
+          <Route path="/meeting">
+            <p>Ya me registré</p>
           </Route>
         </Switch>
       </div>
