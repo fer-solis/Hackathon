@@ -4,6 +4,8 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
+import { MuiPickersUtilsProvider } from '@material-ui/pickers';
+import DateFnsUtils from '@date-io/date-fns';
 
 import Block from './Block.jsx';
 import Register from './Register.jsx';
@@ -21,10 +23,11 @@ function App() {
             <Block/>
           </Route>
           <Route path="/register">
-            <p>Me voy a registrar</p>
-            <Register/>
+            <MuiPickersUtilsProvider utils={DateFnsUtils}>
+              <Register/>
+            </MuiPickersUtilsProvider>  
           </Route>
-          <Route path="/meeting">
+          <Route path="/confirmation">
             <p>Ya me registré</p>
           </Route>
         </Switch>

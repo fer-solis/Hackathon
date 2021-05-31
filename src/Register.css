@@ -1,0 +1,58 @@
+.header{
+    position: absolute;
+    width: 375px;
+    height: 123px;
+    left: 0px;
+    top: 0px;
+}
+#suc{
+    position: absolute;
+    width: 125px;
+    height: 20px;
+    left: 10px;
+    top: 273px;
+    color: #8D8D8D;
+}
+#dateText{
+    position: absolute;
+    width: 103px;
+    height: 20px;
+    left: 10px;
+    top: 425px;
+    color: #8D8D8D;
+}
+#hr{
+    position: absolute;
+    width: 100px;
+    height: 21px;
+    left: 10px;
+    top: 510px;
+    color: #8D8D8D;
+}
+/* 
+.btnConfirm {
+    background: #006FA9;
+    color: white;
+    position: absolute;
+    width: 195px;
+    height: 41px;
+    left: 95px;
+    top: 605px;
+};
+.inputs {
+    border-radius: 20px;
+    width: 375px;
+    height: 52px;
+    top: 142px;
+    margin: 0 0 14px 0px;
+};
+.date{
+    top: 330px;
+    width: 375px;
+    height: 52px;
+    margin: 5px 0px 0px 0px;
+    background: #e0e0e0;
+    justify-content:flex-end;
+    align-items: center;
+
+}; */
