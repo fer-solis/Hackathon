@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { esEs } from '@material-ui/core/locale';
 
 const theme = createMuiTheme({
   palette:{
@@ -14,7 +15,7 @@ const theme = createMuiTheme({
       main: '#EC2023'
     }
   }
-})
+}, esEs)
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>

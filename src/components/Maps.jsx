@@ -3,10 +3,10 @@ import GoogleMaps from 'simple-react-google-maps';
 const Maps = () => {
         return(
             <div>
-                <div className="container">
+                <div className='container'>
                     <GoogleMaps
-                    apiKey={"AIzaSyAWfF5LNPbxYj8eOv97Lf-yZQx4iQsRtGY"}
-                    style={{ height: "400px", width:"300px" }}
+                    apiKey={'AIzaSyAKEyJXo3HxVTw4y8VKrNEz5bARXVPSEvk'}
+                    style={{ height: '630px', width:'350px' }}
                     zoom={15}
                     center={{
                         lat: 19.427384847566692,

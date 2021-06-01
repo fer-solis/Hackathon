@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { db } from '../firebase';
 import { useHistory } from 'react-router-dom';
+import moment from 'moment';
 
 import Button from '@material-ui/core/Button';
 import { makeStyles} from '@material-ui/styles';
@@ -68,16 +69,14 @@ const Register = () => {
     const [ inputData, setInputData ] = useState({
         name:'',
         phone:'',
-        date:'',
+        date: moment(),
         time:''
     });//inputs
-    const [selectedDate, setSelectedDate] = useState(new Date('2021-06-18T21:11:54'));//calendar
     const classes = useStyle()
     const history = useHistory();
     
     const handleDateChange = (date) => {
-        setSelectedDate(date)
-        setInputData({...inputData, date:selectedDate})
+        setInputData({...inputData, date: date})
     };
     
     const formatData = (id,value)=>{
@@ -105,15 +104,18 @@ const Register = () => {
         postDate()
         goConfirmation()
     }
+
     const postDate=()=>{
         db.collection('meets').add(inputData)
         .then((docRef) => {
+            
         }).catch((error) => {
             console.error('Error adding document:', error);
         });
     }
 
-
+    //Formato de fecha para display moment(date).format(dddd, dd mm YYYY)
+    // Antes de hacer el display de la fecha, poner en useEffect(() => {moment.locale('es')}, []) para el idioma, creo xD
     return (  
         <div className='container'>
             <img className='header' src={Header} alt=''/> 
@@ -122,12 +124,12 @@ const Register = () => {
             <TextField className={classes.inputs} id='phone' label='Ingresa tu número telefónico' variant='outlined' type='number' value={inputData.phone} onChange={handleInput}/>
             <p id='suc'>Elige tu sucursal</p>
             <Select className={classes.suc} variant='outlined'><Maps/></Select>
-            
+
             <p id='dateText'>Elige tu fecha</p>
-            <KeyboardDatePicker className={classes.date} inputVariant="outlined"
+            <KeyboardDatePicker className={classes.date} inputVariant='outlined'
                 id='date'
                 format='dd/MM/yyyy'
-                value={selectedDate}
+                value={inputData.date}
                 onChange={handleDateChange}
             />
             <p id='hr'>Elige tu hora</p>
