@@ -1,0 +1,16 @@
+.container{
+    position: relative;
+    width: 375px;
+    height: 667px;
+}
+
+#btnBlue{
+    position: absolute;
+    border: none;
+    width: 320px;
+    height: 43px;
+    left: 28px;
+    top: 396px;
+    background-color: #00BFED;
+    color: #FFFFFF;
+}

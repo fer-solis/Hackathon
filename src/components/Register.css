@@ -1,0 +1,32 @@
+.header{
+    position: absolute;
+    width: 375px;
+    height: 123px;
+    left: 0px;
+    top: 0px;
+}
+#suc{
+    position: absolute;
+    width: 125px;
+    height: 20px;
+    left: 14px;
+    top: 273px;
+    color: #8D8D8D;
+}
+#dateText{
+    position: absolute;
+    width: 103px;
+    height: 20px;
+    left: 14px;
+    top: 365px;
+    color: #8D8D8D;
+    
+}
+#hr{
+    position: absolute;
+    width: 100px;
+    height: 21px;
+    left: 14px;
+    top: 460px;
+    color: #8D8D8D;
+}
