@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { db } from './firebase'
+import { db } from '../firebase';
 import { useHistory } from 'react-router-dom';
 
 import Button from '@material-ui/core/Button';
@@ -13,8 +13,10 @@ import {
   KeyboardDatePicker,
 } from '@material-ui/pickers';
 
-import Header from './assets/encabezadoCliente.png';
+import Header from '../assets/encabezadoCliente.png'
 import './Register.css';
+
+import Maps from './Maps';
 
 const useStyle = makeStyles((theme)=>({
     btnConfirm: {
@@ -63,14 +65,6 @@ const useStyle = makeStyles((theme)=>({
 const Register = () => {
 
     const [hour, sethour] = useState('');
-
-    const handleHour = (event) => {
-      sethour(event.target.value);
-    };
-
-
-
-
     const [ inputData, setInputData ] = useState({
         name:'',
         phone:'',
@@ -99,6 +93,13 @@ const Register = () => {
         const { id, value } = e.target;
         setInputData(formatData(id,value));
     }
+
+    const handleChange = (e)=>{
+        const { value } = e.target;
+        sethour(value);
+        setInputData(formatData('time', value));
+    }
+
     const handleSubmit= (e) => {
         e.preventDefault()
         postDate()
@@ -120,7 +121,8 @@ const Register = () => {
             <TextField className={classes.inputs} id='name' label='Ingresa tu nombre'  variant='outlined' value={inputData.name} onChange ={handleInput} />
             <TextField className={classes.inputs} id='phone' label='Ingresa tu número telefónico' variant='outlined' type='number' value={inputData.phone} onChange={handleInput}/>
             <p id='suc'>Elige tu sucursal</p>
-            <Select className={classes.suc} variant='outlined'/>
+            <Select className={classes.suc} variant='outlined'><Maps/></Select>
+            
             <p id='dateText'>Elige tu fecha</p>
             <KeyboardDatePicker className={classes.date} inputVariant="outlined"
                 id='date'
@@ -129,13 +131,10 @@ const Register = () => {
                 onChange={handleDateChange}
             />
             <p id='hr'>Elige tu hora</p>
-            {/* <input type='time'  id='time' value={inputData.time} onChange = {handleInput}/>
-             */}
-        <Select  variant='outlined'
+        <Select variant='outlined'
         className={classes.hour}
            value={hour}
-           onChange={handleHour}
-
+           onChange={handleChange}
         >
           <MenuItem value={9.30}>9:30</MenuItem>
           <MenuItem value={11}>11:00</MenuItem>

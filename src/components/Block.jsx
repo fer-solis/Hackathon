@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import Back from './assets/bloqueo.png';
+import Back from '../assets/background1.png';
 
 import './Block.css';
 
@@ -14,8 +14,7 @@ const Block = () => {
     return ( 
         <div className='container'>
             <button id='btnBlue' onClick={goPage}>Agenda una cita en sucursal para obtenerlo</button>
-              <img src={Back} alt=''/> 
-              
+              <img src={Back} alt=''/>     
         </div>
      );
 }

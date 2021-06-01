@@ -7,8 +7,9 @@ import {
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
 
-import Block from './Block.jsx';
-import Register from './Register.jsx';
+import Block from './components/Block';
+import Register from './components/Register.jsx';
+import Confirm from './components/Confirm.jsx';
 
 import './App.css';
 //import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
@@ -28,7 +29,7 @@ function App() {
             </MuiPickersUtilsProvider>  
           </Route>
           <Route path="/confirmation">
-            <p>Ya me registré</p>
+            <Confirm/>
           </Route>
         </Switch>
       </div>
