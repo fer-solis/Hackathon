@@ -14,6 +14,9 @@ import Calendars from './components/Calendar.jsx';
 import HeaderCalendar from './components/HeaderCalendar.jsx';
 import Dates from './components/Dates.jsx';
 import Assistant from './components/Assistant.jsx'
+import HeaderConfirm from './components/HeaderConfirm.jsx'
+import FooterConfirm from './components/FooterConfirm.jsx'
+import HeaderAssistant from './components/HeaderAssistant.jsx'
 
 import './App.css';
 //import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
@@ -33,9 +36,12 @@ function App() {
             </MuiPickersUtilsProvider>  
           </Route>
           <Route path="/confirm">
+            <HeaderConfirm/>
             <Confirm/>
+            <FooterConfirm/>
           </Route>
           <Route path="/assistant">
+          <HeaderAssistant/>
           <Assistant/>
           </Route>
           <Route path="/calendar">
