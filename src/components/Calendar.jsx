@@ -13,7 +13,7 @@ class Calendars extends Component {
   events: [
    {
     start: moment('2021-06-05 14:00').toDate(),
-    end: moment('2021-06-05')
+    end: moment('2021-06-05 14:00')
      .add(20, "minutes")
      .toDate(),
     title: "Ana Garcia"
