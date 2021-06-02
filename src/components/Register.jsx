@@ -72,7 +72,7 @@ const Register = () => {
         date: moment(),
         time:''
     });//inputs
-    const classes = useStyle()
+    const classes = useStyle();
     const history = useHistory();
     
     const handleDateChange = (date) => {
