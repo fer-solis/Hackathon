@@ -7,9 +7,13 @@ import {
 import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
 
-import Block from './components/Block';
+import Block from './components/Block.jsx';
 import Register from './components/Register.jsx';
 import Confirm from './components/Confirm.jsx';
+import Calendars from './components/Calendar.jsx';
+import HeaderCalendar from './components/HeaderCalendar.jsx';
+import Dates from './components/Dates.jsx';
+import Assistant from './components/Assistant.jsx'
 
 import './App.css';
 //import AccessAlarmIcon from '@material-ui/icons/AccessAlarm';
@@ -28,8 +32,18 @@ function App() {
               <Register/>
             </MuiPickersUtilsProvider>  
           </Route>
-          <Route path="/confirmation">
+          <Route path="/confirm">
             <Confirm/>
+          </Route>
+          <Route path="/assistant">
+          <Assistant/>
+          </Route>
+          <Route path="/calendar">
+            <HeaderCalendar/>
+            <Calendars/>
+          </Route>
+          <Route path="/date">
+          <Dates/>
           </Route>
         </Switch>
       </div>
