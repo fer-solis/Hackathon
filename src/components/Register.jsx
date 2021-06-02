@@ -85,7 +85,7 @@ const Register = () => {
     }
 
     const goConfirmation = () => {
-      history.push('/confirmation');
+      history.push('/confirm');
     };
 
     const handleInput = (e) => {
